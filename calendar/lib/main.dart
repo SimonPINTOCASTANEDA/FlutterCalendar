@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main(List<String> args) {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     home: MyApp(),
   ));
@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(title: Text("Calendrier flutter")),
+      appBar: AppBar(title: const Text("Calendrier flutter")),
       body: content(),
     );
   }
